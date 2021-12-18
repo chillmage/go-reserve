@@ -19,16 +19,33 @@
 
 
 <script>
+import axios from "axios"
+
 export default {
   name: 'App',
 
-  data() { return {
-    websiteUrl: '',
-  } },
+  data() { 
+    return {
+      websiteUrl: '',
+    } 
+  },
 
   methods: {
     makeWebsiteThumbnail() {
-      console.log(`I should create a website thumbnail of ${this.websiteUrl}`);
+      axios.post("https://screenshotapi.net/api/v1/screenshot", {
+        token: "SCREENSHOTAPI_TOKEN",
+        url: this.websiteUrl,
+        width: 1920,
+        height: 1080,
+        output: 'json',
+        thumbnail_width: 300
+      })
+      .then((response) => {
+        this.thumbnailUrl = response.data.screenshot;
+      })
+      .catch((error) => {
+        window.alert(`The API returned an error: ${error}`);
+      })    
     }
   }
 }
