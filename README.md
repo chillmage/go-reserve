@@ -18,4 +18,14 @@ My .js UI framework/library of choice. Not really opionated in this case, but a 
 - [ ] Perform low-stakes UI design work to get gears going for design portfolio.
 - [ ] Be able to say I built something useful for myself in a new language over a single weekend. Just to flex on the h8rs.[^1]
 
-[^1]: Just to flex on the h8rs. (My h8rs being mainly me.)
+## Project Bibliography
+
+- [Freecodecamp Go and Vue Tutorial](https://www.freecodecamp.org/news/how-i-set-up-a-real-world-project-with-go-and-vue/)
+
+- [Using GraphQL with Golang and a NoSQL Database (Nic Raboy, 2018)](https://blog.couchbase.com/using-graphql-with-golang-and-a-nosql-database/)
+
+
+
+[^1]: (My h8rs being mainly me.)
+
+
