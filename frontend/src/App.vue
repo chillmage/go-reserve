@@ -2,39 +2,48 @@
   <div id="app" class="container">
 
     <!-- Stage it like a show. What is the sequence of events? -->
-    <stanza>
-      <h1 class="branding">kaitak racing</h1> 
-      <p class="branding"><em>from 2022</em></p>  
-
-    </stanza>
+    <header class="branding">
+      <img src="../public/logo.svg"/>
+      <h1>Kaitak Racing</h1> 
+    </header>
 
     <nav>
-      <a class="">equipment/reservations</a>
-      <a class="">league/events</a>
+      <a class="site-links"><h2>Equipment/Reservations</h2></a>
+      <p>Free scheduled delivery, installation and retrieval.</p>
     </nav>
-    <ol>
-      <li class="kit">
-        <header>
-          <h3>ignition kit</h3>
-        </header>
-        <p>can be configured for formula racing or gt racing</p>
-        <p>gt-lite cockpit</p>
-        <p>thrustmaster tmx wheel</p>
-        <p>thrustmaster tx 300 alumininum pedals</p>
+  
+    <article class="kit">
+      <header>
+        <h3>Ignition Kit</h3>
+        <p><em>(Xbox and PC)</em></p>
+        <p>$200 per day</p>
+        <p>$500 per day</p>
+      </header>
+      <main>
+        <p>Ignition Kit includes:</p>
+        <ul>
+          <li>
+            <img class="product" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5434/5434000_sd.jpg"/>
+            <p>Thrustmaster TMX Wheel</p>
+          </li>
+          <li>
+            <img class="product" src="https://www.beracer.com/shop/pub/media/catalog/product/cache/2a6b0744b87cbe1990f7a65c1fd3659e/t/h/thrustmaster-tx-ferrari-458italia-edition-2.jpg"/>
+            <p>Thrustmaster TX Alumininum Pedalset</p>
+          </li>
+          <li>
+            <img class="product" src="https://3pgkb2jl8pg2smexondiy9e4-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/gt_lite_website_gallery_3-1.png" alt="Cockpit Illustration"/>
+            <p>Next Level Racing Folding Sim Cockpit</p>
+          </li>
+        </ul>
+      </main>
+    </article>
 
-        <h4>Q & A</h4> 
-        <h5>will this fit?</h5>
-      
-      </li>
-    </ol>
-    <!-- This should be  a horizontal scrolling element. -->
-    <nav>
-      <article>
-        <h2></h2>
-      </article>
-    </nav>
+    <article id="faq">
+      <h3> Q & A </h3>
+    </article>
+
     <footer>
-      <h2>shift up</h2>
+      <p><em>Full send from 2022</em></p>  
     </footer>
   </div>
 </template>
@@ -54,20 +63,59 @@ export default {
   methods: {
     makeWebsiteThumbnail() {
 
+    },
+    pullInteview() {
+
     }
+
   }
 }
 </script>
 
 <style>
 
+html {
+  font-size: 16px;
+}
+
 * {
   box-sizing: border-box;
-  font-family: "SF Mono", sans-serif;
+  font-family: "Overpass Mono", sans-serif;
   margin-top: 5vh;
 }
 
+h1, h2, h3 {
+  font-weight: 900;
+}
 
+h1 {
+  font-kerning: -50px;
+  font-size: 4em;
+}
+
+.branding img {
+  width: 150px;
+  margin-left: -20px;
+  margin-top: 50px;
+}
+
+nav a, nav a h2 {
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.kit img {
+  height: 200px;
+}
+
+li {
+  margin: 20px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
 
 </style>
 
