@@ -1,52 +1,74 @@
 <template>
   <div id="app" class="container">
-    <div class="row">
-      <div class="col-md-6 offset-md-3 py-5">
-        <h1>Generate a thumbnail of a website</h1>
 
-        <form v-on:submit.prevent="makeWebsiteThumbnail">
-          <div class="form-group">
-            <input v-model="websiteUrl" type="text" id="website-input" placeholder="Enter a website" class="form-control">
-          </div>
-          <div class="form-group">
-            <button class="btn btn-primary">Generate!</button>
-          </div>
-        </form>
-      </div>
-    </div>
+    <!-- Stage it like a show. What is the sequence of events? -->
+    <stanza>
+      <h1 class="branding">kaitak racing</h1> 
+      <p class="branding"><em>from 2022</em></p>  
+
+    </stanza>
+
+    <nav>
+      <a class="">equipment/reservations</a>
+      <a class="">league/events</a>
+    </nav>
+    <ol>
+      <li class="kit">
+        <header>
+          <h3>ignition kit</h3>
+        </header>
+        <p>can be configured for formula racing or gt racing</p>
+        <p>gt-lite cockpit</p>
+        <p>thrustmaster tmx wheel</p>
+        <p>thrustmaster tx 300 alumininum pedals</p>
+
+        <h4>Q & A</h4> 
+        <h5>will this fit?</h5>
+      
+      </li>
+    </ol>
+    <!-- This should be  a horizontal scrolling element. -->
+    <nav>
+      <article>
+        <h2></h2>
+      </article>
+    </nav>
+    <footer>
+      <h2>shift up</h2>
+    </footer>
   </div>
 </template>
 
 
-<script>
-import axios from "axios"
 
+<script>
 export default {
   name: 'App',
 
   data() { 
     return {
-      websiteUrl: '',
+      selection: 1,
     } 
   },
 
   methods: {
     makeWebsiteThumbnail() {
-      axios.post("https://screenshotapi.net/api/v1/screenshot", {
-        token: "SCREENSHOTAPI_TOKEN",
-        url: this.websiteUrl,
-        width: 1920,
-        height: 1080,
-        output: 'json',
-        thumbnail_width: 300
-      })
-      .then((response) => {
-        this.thumbnailUrl = response.data.screenshot;
-      })
-      .catch((error) => {
-        window.alert(`The API returned an error: ${error}`);
-      })    
+
     }
   }
 }
 </script>
+
+<style>
+
+* {
+  box-sizing: border-box;
+  font-family: "SF Mono", sans-serif;
+  margin-top: 5vh;
+}
+
+
+
+</style>
+
+
