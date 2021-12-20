@@ -18,13 +18,18 @@ My .js UI framework/library of choice. Not really opionated in this case, but a 
 - [ ] Perform low-stakes UI design work to get gears going for design portfolio.
 - [ ] Be able to say I built something useful for myself in a new language over a single weekend. Just to flex on the h8rs.[^1]
 
+## Check-ins:
+**20 December 2021**
+Thinking about a [Notion](https://notion.so) integration for the backend. They've got a Javascript SDK, but switching to that now would be a defeat of the main purpose of the project: to pick up Go. I should go back to the Codecademy page.
+
+
 ## Project Bibliography
 
 - [Freecodecamp Go and Vue Tutorial](https://www.freecodecamp.org/news/how-i-set-up-a-real-world-project-with-go-and-vue/)
 
 - [Using GraphQL with Golang and a NoSQL Database (Nic Raboy, 2018)](https://blog.couchbase.com/using-graphql-with-golang-and-a-nosql-database/)
 
-
+- [Codecademy Go track](https://www.codecademy.com/courses/learn-go/projects/comic-mischief)
 
 [^1]: (My h8rs being mainly me.)
 
